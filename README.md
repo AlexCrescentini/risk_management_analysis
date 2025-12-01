@@ -1,2 +1,5 @@
-# risk_management_analysis
-Credit and operational risk analysis using Python
+# Credit and Operational Risk Analysis using Python
+
+## Credit Risk: scoring
+
+## Operational Risk: fraud detection
