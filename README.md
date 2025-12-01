@@ -1,5 +1,5 @@
 # Credit and Operational Risk Analysis using Python
 
-## Credit Risk: scoring
+## Credit risk: Scoring
 
-## Operational Risk: fraud detection
+## Operational risk: Fraud Detection
