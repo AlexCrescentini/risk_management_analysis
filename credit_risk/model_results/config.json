@@ -12,9 +12,8 @@
     "NumberOfTimes90DaysLate"
   ],
   "target_name": "SeriousDlqin2yrs",
-  "best_model": "XGBoost",
   "training_samples": 120000,
   "validation_samples": 30000,
   "default_rate": 0.06684166666666666,
-  "training_date": "2025-12-05 14:18:12"
+  "training_date": "2025-12-05 17:07:46"
 }
