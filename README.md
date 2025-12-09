@@ -10,8 +10,7 @@ End-to-end credit risk framework using machine learning for probability of defau
    
 - [`credit_default_model.ipynb`](credit_risk/credit_default_model.ipynb) — Explored and preprocessed the Kaggle "Give Me Some Credit" dataset (150K loan applications). Built and compared Logistic Regression, KNN, Random Forest, and XGBoost classifiers. Evaluated with AUC-ROC, confusion matrices, and calibration curves. Applied Platt scaling for probability calibration.
 
-- [`loan_scoring_decisioning.ipynb`](credit_risk/loan_scoring_decisioning.ipynb) — Deployed the best model (XGBoost, AUC=0.87) to score new loan applications and automate approve/decline decisions based on risk bands; generated SHAP-based adverse action notices for declined applicants explaining the key factors driving the decision (regulatory requirement under ECOA/FCRA).  
-
+- [`loan_scoring_and_decision.ipynb`](credit_risk/loan_scoring_and_decision.ipynb) — Deployed the best model (XGBoost, AUC=0.87) to score new loan applications and automate approve/decline decisions based on risk bands; generated SHAP-based adverse action notices for declined applicants explaining the key factors driving the decision (regulatory requirement under ECOA/FCRA).  
 
 ### Market Risk
 
@@ -21,7 +20,7 @@ End-to-end credit risk framework using machine learning for probability of defau
 
 Basel III liquidity risk framework for a crypto-fintech company, covering regulatory metrics (LCR, NSFR), interest rate risk analysis (IRRBB), stress testing, and cash flow forecasting.
 
-- [`liquidity_risk_analysis.ipynb`](liquidity_risk/liquidity_risk_analysis.ipynb) — Built a synthetic balance sheet calibrated to public filings, calculated LCR and NSFR following Basel III methodology, performed IRRBB sensitivity analysis (±200bps shocks on NII and EVE), designed 5 stress scenarios including crypto-specific risks (stablecoin crisis, crypto winter), and ran Monte Carlo simulations for 90-day liquidity forecasting. Integrated real market data from CoinGecko API for calibration.
+- [`liquidity_risk_analysis.ipynb`](liquidity_risk/lcr_nsfr_stress_testing.ipynb) — Built a synthetic balance sheet calibrated to public filings, calculated LCR and NSFR following Basel III methodology, performed IRRBB sensitivity analysis (±200bps shocks on NII and EVE), designed 5 stress scenarios including crypto-specific risks (stablecoin crisis, crypto winter), and ran Monte Carlo simulations for 90-day liquidity forecasting. Integrated real market data from CoinGecko API for calibration.
 
 ### Operational Risk
 
@@ -44,13 +43,13 @@ risk_management_analysis/
 │   ├── data/
 │   ├── model_results/
 │   ├── credit_default_model.ipynb
-│   └── loans_scoring_decision.ipynb
+│   └── loan_scoring_and_decision.ipynb
 ├── market_risk/
 │   ├── data/ 
 │   └── var_stress_testing.ipynb
 ├── liquidity_risk/
 │   ├── data/ 
-│   └── fraud_detection.ipynb
+│   └── lcr_nsfr_stress_testing.ipynb
 └── operational_risk/
     ├── data/
     └── fraud_detection.ipynb
