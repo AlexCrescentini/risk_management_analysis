@@ -22,6 +22,22 @@ Basel III liquidity risk framework for a crypto-fintech company, covering regula
 
 - [`lcr_nsfr_stress_testing.ipynb`](liquidity_risk/lcr_nsfr_stress_testing.ipynb) — Built a synthetic balance sheet calibrated to public filings, calculated LCR and NSFR following Basel III methodology, performed IRRBB sensitivity analysis (±200bps shocks on NII and EVE), designed 5 stress scenarios including crypto-specific risks (stablecoin crisis, crypto winter), and ran Monte Carlo simulations for 90-day liquidity forecasting. Integrated real market data from CoinGecko API for calibration.
 
+This project builds a liquidity risk framework for a crypto-fintech company following Basel III.
+
+| Component | Description |
+|-----------|-------------|
+| **LCR** | Liquidity Coverage Ratio - 30-day survival |
+| **NSFR** | Net Stable Funding Ratio - long-term stability |
+| **IRRBB** | Interest Rate Risk in Banking Book |
+| **Stress Testing** | Multiple scenarios including crypto risks |
+| **Forecasting** | Monte Carlo simulation |
+
+| Data | Source | Type |
+|------|--------|------|
+| Crypto prices | CoinGecko API | Real |
+| Stablecoin data | CoinGecko API | Real |
+| Balance sheet | Calibrated to public filings | Synthetic |
+
 ### Operational Risk
 
 *Coming soon*
