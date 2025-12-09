@@ -1,46 +1,34 @@
 ## Risk Management using Python
 
-This repo uses Python to carry out a few projects and analysis across the main areas of risk management.
+This repo uses Python to carry out projects and analysis across the main areas of risk management.
 
 ---
 
 ### Credit Risk
-
 End-to-end credit risk framework using machine learning for probability of default (PD) modeling, model calibration, automated credit decisioning, and regulatory-compliant adverse action reporting.
    
 - [`credit_default_model.ipynb`](credit_risk/credit_default_model.ipynb) — Explored and preprocessed the Kaggle "Give Me Some Credit" dataset (150K loan applications). Built and compared Logistic Regression, KNN, Random Forest, and XGBoost classifiers. Evaluated with AUC-ROC, confusion matrices, and calibration curves. Applied Platt scaling for probability calibration.
+- [`loan_scoring_and_decision.ipynb`](credit_risk/loan_scoring_and_decision.ipynb) — Deployed the best model (XGBoost, AUC=0.87) to score new loan applications and automate approve/decline decisions based on risk bands. Generated SHAP-based adverse action notices for declined applicants (ECOA/FCRA compliance).
 
-- [`loan_scoring_and_decision.ipynb`](credit_risk/loan_scoring_and_decision.ipynb) — Deployed the best model (XGBoost, AUC=0.87) to score new loan applications and automate approve/decline decisions based on risk bands; generated SHAP-based adverse action notices for declined applicants explaining the key factors driving the decision (regulatory requirement under ECOA/FCRA).  
+> **Credit risk** is the risk of financial loss due to a borrower's failure to repay a loan or meet contractual obligations.
+  
+### Liquidity Risk
+Analysis covering Basel III regulatory ratios (LCR and NSFR), daily cash management, cash forecasting, and stress testing:
+
+- [`basel_III_metrics.ipynb`](liquidity_risk/basel_III_metrics.ipynb) — LCR and NSFR calculation following Basel III methodology. Stress scenarios including crypto-specific risks. Market data integration from CoinGecko API. **Basel III** introduced two complementary standards: the **Liquidity Coverage Ratio (LCR)** for 30-day stress resilience and the **Net Stable Funding Ratio (NSFR)** for one-year structural stability.
+- [`operative_liquidity_management.ipynb`](liquidity_risk/operative_liquidity_management.ipynb) — Daily cash monitoring, Monte Carlo forecasting (90-day), operational buffers, and liquidity stress testing. Effective liquidity management requires daily cash monitoring, multi-horizon forecasting, stress testing, and contingency funding planning.
+
+> **Liquidity risk** is the risk that an institution cannot meet payment obligations when due without incurring unacceptable losses.
 
 ### Market Risk
-
 *Coming soon*
 
-### Liquidity Risk
-
-Basel III liquidity risk framework for a crypto-fintech company, covering regulatory metrics (LCR, NSFR), interest rate risk analysis (IRRBB), stress testing, and cash flow forecasting.
-
-- [`lcr_nsfr_stress_testing.ipynb`](liquidity_risk/lcr_nsfr_stress_testing.ipynb) — Built a synthetic balance sheet calibrated to public filings, calculated LCR and NSFR following Basel III methodology, performed IRRBB sensitivity analysis (±200bps shocks on NII and EVE), designed 5 stress scenarios including crypto-specific risks (stablecoin crisis, crypto winter), and ran Monte Carlo simulations for 90-day liquidity forecasting. Integrated real market data from CoinGecko API for calibration.
-
-This project builds a liquidity risk framework for a crypto-fintech company following Basel III.
-
-| Component | Description |
-|-----------|-------------|
-| **LCR** | Liquidity Coverage Ratio - 30-day survival |
-| **NSFR** | Net Stable Funding Ratio - long-term stability |
-| **IRRBB** | Interest Rate Risk in Banking Book |
-| **Stress Testing** | Multiple scenarios including crypto risks |
-| **Forecasting** | Monte Carlo simulation |
-
-| Data | Source | Type |
-|------|--------|------|
-| Crypto prices | CoinGecko API | Real |
-| Stablecoin data | CoinGecko API | Real |
-| Balance sheet | Calibrated to public filings | Synthetic |
+> **Market risk** is the risk of losses due to adverse movements in market prices and rates (interest rates, foreign exchange, equities, commodities).
 
 ### Operational Risk
-
 *Coming soon*
+
+> **Operational risk** is the risk of loss resulting from inadequate or failed internal processes, people, systems, or external events.
 
 ---
 
