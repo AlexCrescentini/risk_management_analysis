@@ -1,6 +1,11 @@
 # Risk Management using Python
 
-This repo uses Python to carry out projects and analysis across the main areas of risk management: credit, market, liquidity, and operational risk.
+This repo uses Python to carry out a few projects and analysis across the main areas of risk management. The main topics covered are:
+
+1. credit risk
+2. market risk
+3. liquidity risk
+4. operational risk
 
 ## Repository Structure
 
@@ -9,13 +14,18 @@ risk_management_analysis/
 ├── README.md
 ├── credit_risk/
 │   ├── data/
-│   └── credit_scoring_model.ipynb
-├── operational_risk/
+│   ├── model_results/
+│   ├── credit_default_model.ipynb
+│   └── loans_scoring_decision.ipynb
+├── market_risk/
+│   ├── data/ 
+│   └── var_stress_testing.ipynb
+├── liquidity_risk/
 │   ├── data/ 
 │   └── fraud_detection.ipynb
-└── market_risk/
+└── operational_risk/
     ├── data/
-    └── var_stress_testing.ipynb
+    └── fraud_detection.ipynb
 ```
 
 ## Projects
