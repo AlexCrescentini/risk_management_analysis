@@ -1,13 +1,24 @@
-# Risk Management using Python
+## Risk Management using Python
 
-This repo uses Python to carry out a few projects and analysis across the main areas of risk management. The main topics covered are:
+This repo uses Python to carry out a few projects and analysis across the main areas of risk management.
 
-1. credit risk
-2. market risk
-3. liquidity risk
-4. operational risk
+#### Project Overview
 
-## Repository Structure
+The topics covered are the following:
+
+1. **Credit Risk** ([`credit_risk/`](credit_risk)) 
+   
+   Build and assess the predictive performance of a set of credit default model using ML over a Kaggle dataset of.
+   
+   Deployment of the best model to score clients loans applications and regulatory....
+   
+2. **Market Risk** ([`market_risk/`](credimarket_riskt_risk)) 
+3. **Liquidity Risk** ([`liquidity_risk/`](liquidity_risk)) 
+4. **Operational Risk** ([`operational_risk/`](operational_risk)) 
+
+**Python packages:** `pandas`, `numpy`, `requests`, `duckdb`, `matplotlib`, `scipy`, `geopandas`, `plotly`
+
+#### Repository Structure
 
 ```
 risk_management_analysis/
@@ -27,20 +38,20 @@ risk_management_analysis/
     ├── data/
     └── fraud_detection.ipynb
 ```
+---
 
-## Projects
+### 1. Credit Risk
 
-### Credit Risk
-- **Credit Scoring Model** - Predicting loan default probability using logistic regression
+---
 
-### Market Risk
-- **VaR & Stress Testing** - Value at Risk calculation and stress testing scenarios
+### 2. Market Risk
 
-### Liquidity Risk
-- **Liquidity Gap Analysis** - Measuring mismatches between asset and liability maturities
+---
 
-### Operational Risk
-- **Fraud Detection** - Identifying fraudulent transactions using classification models
+### 3. Liquidity Risk
 
-## Tools
-Python, pandas, numpy, scikit-learn, matplotlib, seaborn
+---
+
+### 4. Operational Risk
+
+---
