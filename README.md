@@ -20,7 +20,7 @@ End-to-end credit risk framework using machine learning for probability of defau
 
 Basel III liquidity risk framework for a crypto-fintech company, covering regulatory metrics (LCR, NSFR), interest rate risk analysis (IRRBB), stress testing, and cash flow forecasting.
 
-- [`liquidity_risk_analysis.ipynb`](liquidity_risk/lcr_nsfr_stress_testing.ipynb) — Built a synthetic balance sheet calibrated to public filings, calculated LCR and NSFR following Basel III methodology, performed IRRBB sensitivity analysis (±200bps shocks on NII and EVE), designed 5 stress scenarios including crypto-specific risks (stablecoin crisis, crypto winter), and ran Monte Carlo simulations for 90-day liquidity forecasting. Integrated real market data from CoinGecko API for calibration.
+- [`lcr_nsfr_stress_testing.ipynb`](liquidity_risk/lcr_nsfr_stress_testing.ipynb) — Built a synthetic balance sheet calibrated to public filings, calculated LCR and NSFR following Basel III methodology, performed IRRBB sensitivity analysis (±200bps shocks on NII and EVE), designed 5 stress scenarios including crypto-specific risks (stablecoin crisis, crypto winter), and ran Monte Carlo simulations for 90-day liquidity forecasting. Integrated real market data from CoinGecko API for calibration.
 
 ### Operational Risk
 
