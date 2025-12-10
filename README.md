@@ -1,6 +1,6 @@
 ## Risk Management using Python
 
-This repo uses Python to carry out projects and analysis across the main areas of risk management.
+This repo uses Python to carry out few analysis across the main areas of risk management.
 
 ---
 
