@@ -9,8 +9,6 @@ The projects covered are:
 - **[ICAAP: Interest Rate Risk in the Banking Book (IRRBB)](#icaap-interest-rate-risk-in-the-banking-book-irrbb)** — EVE and NII sensitivity analysis, Pillar 2 capital assessment  
 - **[Operational Risk: Fraud Detection](#operational-risk-fraud-detection)** — ML-based fraud detection and operational risk monitoring
 
-The repo bridges regulatory context with practical Python implementations for risk analysis.
-
 #### Repository Structure
 
 ```
