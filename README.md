@@ -5,9 +5,9 @@ This repository shows few practical applications in financial risk management us
 The projects covered are:
 
 - **[Credit Risk](#credit-risk)** — PD modeling using ML techniques, loan scoring, and regulatory-compliant reporting  
-- **Liquidity Risk** — Basel III ratios (LCR, NSFR), cash management, and stress testing  
-- **Market Risk** — coming soon  
-- **Operational Risk** — coming soon  
+- **[Liquidity Risk](#liquidity-risk)** — Basel III ratios (LCR, NSFR), cash management, and stress testing  
+- **[Market Risk](#market-risk)** — coming soon  
+- **[Operational Risk](#operational-risk)** — coming soon  
 
 The repo bridges regulatory context with practical Python implementations for risk analysis.
 
