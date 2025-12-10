@@ -4,10 +4,10 @@ This repository shows selected practical applications in financial risk manageme
 
 The projects covered are:
 
-- **[Probability of Default (PD) Modeling and Loan Decision](#pd-modeling-and-loan-decision)** — ML-based PD modeling, loan scoring, and regulatory-compliant reporting  
+- **[Probability of Default (PD) and Loan Decision](#probability-of-default-pd-modeling-and-loan-decision)** — ML-based PD modeling, loan scoring, and regulatory-compliant reporting  
 - **[Liquidity Risk](#liquidity-risk)** — Basel III ratios (LCR, NSFR), cash management, and stress testing  
-- **[ICAAP: Interest Rate Risk in the Banking Book (IRRBB)](#irrbb)** — EVE and NII sensitivity analysis, Pillar 2 capital assessment  
-- **[Operational Risk: Fraud Detection](#fraud-detection)** — ML-based fraud detection and operational risk monitoring
+- **[ICAAP: Interest Rate Risk in the Banking Book (IRRBB)](#icaap-interest-rate-risk-in-the-banking-book-irrbb)** — EVE and NII sensitivity analysis, Pillar 2 capital assessment  
+- **[Operational Risk: Fraud Detection](#operational-risk-fraud-detection)** — ML-based fraud detection and operational risk monitoring
 
 The repo bridges regulatory context with practical Python implementations for risk analysis.
 
