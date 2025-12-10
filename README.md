@@ -1,6 +1,6 @@
 ## Risk Management using Python
 
-This repository shows practical Python applications in financial risk management. A brief overview of **Basel III and the three-pillar framework** is provided [here](./basel_III_summary.md) for context. 
+This repository demonstrates practical Python applications in financial risk management. To provide context on the regulatory environment, a brief overview of the **Basel III three-pillar framework** is available [here](./basel_III_framework.md).
 
 The main focus is on hands-on analytics:
 
