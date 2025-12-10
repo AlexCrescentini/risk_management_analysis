@@ -16,7 +16,7 @@ End-to-end credit risk framework using machine learning for probability of defau
 Analysis covering Basel III regulatory ratios (LCR and NSFR), daily cash management, cash forecasting, and stress testing:
 
 - [`basel_III_metrics.ipynb`](liquidity_risk/basel_III_metrics.ipynb) — LCR and NSFR calculation following Basel III methodology. Stress scenarios including crypto-specific risks. Market data integration from CoinGecko API. **Basel III** introduced two complementary standards: the **Liquidity Coverage Ratio (LCR)** for 30-day stress resilience and the **Net Stable Funding Ratio (NSFR)** for one-year structural stability.
-- [`operative_liquidity_management.ipynb`](liquidity_risk/operative_liquidity_management.ipynb) — Daily cash monitoring, Monte Carlo forecasting (90-day), operational buffers, and liquidity stress testing. Effective liquidity management requires daily cash monitoring, multi-horizon forecasting, stress testing, and contingency funding planning.
+- [`liquidity_management.ipynb`](liquidity_risk/liquidity_management.ipynb) — Daily cash monitoring, Monte Carlo forecasting (90-day), operational buffers, and liquidity stress testing. Effective liquidity management requires daily cash monitoring, multi-horizon forecasting, stress testing, and contingency funding planning.
 
 > **Liquidity risk** is the risk that an institution cannot meet payment obligations when due without incurring unacceptable losses.
 
