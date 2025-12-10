@@ -107,14 +107,17 @@ Banks must calculate RWA using approved approaches (SA or internal models with s
 Qualitative and quantitative assessment of risks not fully captured by Pillar 1. Subject institutions perform an internal assessment; the supervisor reviews and may set additional requirements.
 
 ### The Process Chain
-
-| Process | Owner | Purpose |
-|---------|-------|---------|
-| **ICAAP** | Bank (internal) | Internal Capital Adequacy Assessment — identify all material risks, quantify capital needs above Pillar 1 |
-| **ILAAP** | Bank (internal) | Internal Liquidity Adequacy Assessment — assess liquidity risks beyond LCR/NSFR |
-| **SREP** | Supervisor | Supervisory Review and Evaluation — assess business model, governance, capital and liquidity adequacy |
-| **P2R** | Supervisor → Bank | Pillar 2 Requirement — binding additional capital based on SREP findings |
-| **P2G** | Supervisor → Bank | Pillar 2 Guidance — expected buffer above P2R (not legally binding) |
+```
+ICAAP / ILAAP               SREP                       P2R / P2G
+(Bank internal)    ---→    (Supervisor review)  ---→  (Supervisor decision)
+      │                           │                          │
+      ▼                           ▼                          ▼
+Bank identifies            Supervisor assesses         Supervisor sets:
+all material risks         business model,             • P2R (binding)
+and quantifies             governance, capital         • P2G (guidance)
+capital/liquidity          and liquidity adequacy
+needs above Pillar 1
+```
 
 ### 1. Capital Adequacy (ICAAP)
 
@@ -136,18 +139,19 @@ Qualitative and quantitative assessment of risks not fully captured by Pillar 1.
 | **Asset Encumbrance** | Pledged assets reducing available liquidity buffer |
 | **FX Liquidity** | Currency mismatch — ability to meet obligations in each significant currency |
 
---> **The Complete Capital Stack**
+### The Complete Capital Stack (Capital Only)
 
-| Layer | Typical Range |
-|-------|---------------|
-| *P2G (guidance — not binding)* | ~1–3% |
-| **P2R (binding)** | ~1–4% |
-| **Countercyclical Buffer** | 0–2.5% |
-| **Systemic Buffers (G-SII / O-SII)** | 0–3.5% |
-| **Capital Conservation Buffer** | 2.5% |
-| **Pillar 1 Minimum** | 8% (CET1 4.5% + AT1 1.5% + T2 2%) |
+**Pillar 1 Requirements:**
+- Minimum ratios: CET1 ≥ 4.5% | Tier 1 ≥ 6% | Total Capital ≥ 8%
+- Capital Conservation Buffer: 2.5%
+- Countercyclical Buffer: 0–2.5%
+- Systemic Buffers (G-SII / O-SII): 0–3.5%
 
-*Typical EU bank: 12–18% total capital requirement depending on risk profile.*
+**Pillar 2 Add-ons:**
+- P2R (binding): ~1–4%
+- P2G (guidance): ~1–3%
+
+*Typical EU bank: 12–18% total capital requirement.*
 
 ---
 
@@ -155,40 +159,14 @@ Qualitative and quantitative assessment of risks not fully captured by Pillar 1.
 
 Public disclosure requirements enabling market participants to assess bank risk profiles. Creates external discipline through transparency.
 
-### Disclosure Requirements
-
-| Disclosure Area | Content |
-|-----------------|---------|
-| **Capital** | Composition of capital, capital ratios, leverage ratio, reconciliation to accounting |
-| **Risk Exposures** | Credit risk exposures by portfolio, geography, maturity; market risk; operational risk |
-| **RWA** | RWA by risk type, approach used (SA/IRB/IMA), RWA flow statements |
-| **Liquidity** | LCR and NSFR ratios, HQLA composition, funding profile |
-| **IRRBB** | EVE and NII sensitivities, key assumptions (especially NMD treatment) |
-| **Risk Management** | Governance, risk appetite, policies and processes for each risk type |
-| **Remuneration** | Remuneration policies, pay outcomes for material risk takers |
-
-### Disclosure Frequency
-
-| Frequency | Content |
-|-----------|---------|
-| **Annual** | Full Pillar 3 report — all templates and qualitative disclosures |
-| **Semi-Annual** | Key metrics and selected quantitative templates |
-| **Quarterly** | Capital ratios, leverage ratio, LCR (large/listed institutions) |
-
-*Format: Standardised templates under CRR Part Eight and EBA ITS. Must be published on the institution's website.*
+Institutions must publish a Pillar 3 report annually, with key metrics updated semi-annually and capital/liquidity ratios disclosed quarterly for large institutions. The report covers capital composition, risk exposures (credit, market, operational), RWA breakdown by approach, liquidity metrics (LCR, NSFR), IRRBB sensitivities, risk management governance, and remuneration policies. Format follows standardised templates under CRR Part Eight and EBA ITS, published on the institution's website.
 
 ---
 
 ## Regulatory Compliance
 
-All credit institutions authorised under CRD are subject to Pillar 1 requirements. Compliance is mandatory and continuous — requirements must be met at all times, not just at reporting dates. Internal systems must monitor ratios daily/weekly; formal reporting is periodic.
+All credit institutions authorised under CRD are subject to the framework. Pillar 1 requirements (capital ratios, LCR, NSFR, leverage ratio) must be met continuously — not just at reporting dates. Internal systems monitor ratios daily or weekly, while formal supervisory reporting follows a periodic cycle: capital ratios quarterly via COREP templates, LCR monthly for large banks (quarterly for others), NSFR and leverage ratio quarterly.
 
-| Requirement | Must Be Met | Reporting Frequency |
-|-------------|-------------|---------------------|
-| Capital Ratios | Continuously | Quarterly (COREP templates) |
-| LCR | Continuously | Monthly (large banks) / Quarterly (others) |
-| NSFR | Continuously | Quarterly |
-| Leverage Ratio | Continuously | Quarterly |
-| Large Exposures | Continuously | Quarterly |
+Pillar 2 compliance is assessed through the annual SREP cycle — institutions submit ICAAP and ILAAP documentation, the supervisor evaluates and sets P2R/P2G, and the institution must maintain capital above these thresholds.
 
-*Note: COREP (Common Reporting) is the standardised EU reporting framework covering own funds, capital ratios, RWA by risk type, large exposures, leverage, and liquidity.*
+Pillar 3 compliance requires timely publication of disclosure reports on the institution's website, with annual, semi-annual, and quarterly components depending on the institution's size and systemic importance.
