@@ -4,7 +4,7 @@ This repository shows few practical applications in financial risk management us
 
 The main focus is on hands-on analytics:
 
-- **Credit Risk** — PD modeling, loan scoring, and regulatory-compliant reporting  
+- **Credit Risk** — PD modeling using ML techniques, loan scoring, and regulatory-compliant reporting  
 - **Liquidity Risk** — Basel III ratios (LCR, NSFR), cash management, and stress testing  
 - **Market Risk** — coming soon  
 - **Operational Risk** — coming soon  
@@ -21,12 +21,14 @@ risk_management_analysis/
 │   ├── model_results/
 │   ├── credit_default_model.ipynb
 │   └── loan_scoring_and_decision.ipynb
+├── liquidity_risk/
+│   ├── data/
+│   ├── results/
+│   ├── basel_III_metrics.ipynb
+│   └── liquidity_management.ipynb
 ├── market_risk/
 │   ├── data/ 
 │   └── var_stress_testing.ipynb
-├── liquidity_risk/
-│   ├── data/ 
-│   └── lcr_nsfr_stress_testing.ipynb
 └── operational_risk/
     ├── data/
     └── fraud_detection.ipynb
