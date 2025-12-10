@@ -14,7 +14,7 @@ The projects covered are:
 ```
 risk_management_analysis/
 ├── README.md
-├── credit_risk/
+├── pd_modeling/
 │   ├── data/
 │   ├── model_results/
 │   ├── credit_default_model.ipynb
@@ -24,10 +24,10 @@ risk_management_analysis/
 │   ├── results/
 │   ├── basel_III_metrics.ipynb
 │   └── liquidity_management.ipynb
-├── market_risk/
+├── icaap_irrbb/
 │   ├── data/ 
 │   └── var_stress_testing.ipynb
-└── operational_risk/
+└── fraud_detection/
     ├── data/
     └── fraud_detection.ipynb
 ```
@@ -38,15 +38,15 @@ risk_management_analysis/
 
 ---
 
-### Probability of Default (PD) Modeling and Loan Decision
+### Probability of Default (PD) Modeling and Loan Decision ([`pd_modeling/`](pd_modeling/))
 PD is a central element in credit risk management and forms a key basis for Basel III Pillar 1 capital requirements. Here we focus on using machine learning for probability of default (PD) modeling, model calibration, automated credit decisioning, and regulatory-compliant adverse action reporting.
    
-- [`credit_default_model.ipynb`](credit_risk/credit_default_model.ipynb) — Explored and preprocessed the Kaggle "Give Me Some Credit" dataset (150K loan applications). Built and compared Logistic Regression, KNN, Random Forest, and XGBoost classifiers. Evaluated with AUC-ROC, confusion matrices, and calibration curves. Applied Platt scaling for probability calibration.
-- [`loan_scoring_and_decision.ipynb`](credit_risk/loan_scoring_and_decision.ipynb) — Deployed the best model (XGBoost, AUC=0.87) to score new loan applications and automate approve/decline decisions based on risk bands. Generated SHAP-based adverse action notices for declined applicants (ECOA/FCRA compliance).
+- [`credit_default_model.ipynb`](pd_modeling/credit_default_model.ipynb) — Explored and preprocessed the Kaggle "Give Me Some Credit" dataset (150K loan applications). Built and compared Logistic Regression, KNN, Random Forest, and XGBoost classifiers. Evaluated with AUC-ROC, confusion matrices, and calibration curves. Applied Platt scaling for probability calibration.
+- [`loan_scoring_and_decision.ipynb`](pd_modeling/loan_scoring_and_decision.ipynb) — Deployed the best model (XGBoost, AUC=0.87) to score new loan applications and automate approve/decline decisions based on risk bands. Generated SHAP-based adverse action notices for declined applicants (ECOA/FCRA compliance).
 
 ---
 
-### Liquidity Risk
+### Liquidity Risk ([`liquidity_risk/`](liquidity_risk/))
 Analysis covering Basel III - pillar 1 regulatory ratios (LCR and NSFR), daily cash management, cash forecasting, and stress testing:
 
 - [`basel_III_metrics.ipynb`](liquidity_risk/basel_III_metrics.ipynb) — LCR and NSFR calculation following Basel III methodology. Stress scenarios including crypto-specific risks. Market data integration from CoinGecko API. **Basel III** introduced two complementary standards: the **Liquidity Coverage Ratio (LCR)** for 30-day stress resilience and the **Net Stable Funding Ratio (NSFR)** for one-year structural stability.
