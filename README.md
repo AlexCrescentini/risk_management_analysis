@@ -1,6 +1,15 @@
 ## Risk Management using Python
 
-This repo uses Python to carry out few analysis across the main areas of risk management.
+This repository shows practical Python applications in financial risk management. A brief overview of **Basel III and the three-pillar framework** is provided [here](./basel_III_summary.md) for context. 
+
+The main focus is on hands-on analytics:
+
+- **Credit Risk** — PD modeling, loan scoring, and regulatory-compliant reporting  
+- **Liquidity Risk** — Basel III ratios (LCR, NSFR), cash management, and stress testing  
+- **Market Risk** — coming soon  
+- **Operational Risk** — coming soon  
+
+The repo bridges regulatory context with practical Python implementations for risk analysis.
 
 ---
 
