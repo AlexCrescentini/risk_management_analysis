@@ -2,9 +2,9 @@
 
 This repository shows few practical applications in financial risk management using Python. To provide context on the regulatory environment, a brief overview of the **Basel III three-pillar framework** is available [here](./basel_III_framework.md).
 
-The main focus is on hands-on analytics:
+The projects covered are:
 
-- **Credit Risk** — PD modeling using ML techniques, loan scoring, and regulatory-compliant reporting  
+- **[Credit Risk](#credit-risk)** — PD modeling using ML techniques, loan scoring, and regulatory-compliant reporting  
 - **Liquidity Risk** — Basel III ratios (LCR, NSFR), cash management, and stress testing  
 - **Market Risk** — coming soon  
 - **Operational Risk** — coming soon  
