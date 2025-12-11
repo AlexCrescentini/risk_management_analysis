@@ -1,0 +1,29 @@
+BALANCE SHEET SUMMARY (mln EUR)
+==========================================================================================
+
+ASSETS
+------------------------------------------------------------------------------------------
+Segment                            Amount    Share  Rate Type    Repricing   Maturity
+------------------------------------------------------------------------------------------
+Consumer Credit                    30,000      15%      Fixed      At Mat.        1.7
+Corporate Loan                     30,000      15%   Floating            2        2.0
+Sme Loan                           40,000      20%   Floating            7        3.0
+Retail Mortgage Fixed              70,000      35%      Fixed      At Mat.       13.9
+Retail Mortgage Floating           30,000      15%   Floating            4       14.2
+------------------------------------------------------------------------------------------
+TOTAL ASSETS                      200,000
+
+LIABILITIES
+------------------------------------------------------------------------------------------
+Segment                            Amount    Share           Type    Repricing   Maturity
+------------------------------------------------------------------------------------------
+Corporate Treasury                  9,400       5%            NMD          O/N        O/N
+Retail Current                     28,200      14%            NMD          O/N        O/N
+Retail Savings                     33,840      17%            NMD          O/N        O/N
+Sme Operational                    13,160       7%            NMD          O/N        O/N
+Wholesale                          41,360      21%      WHOLESALE      At Mat.        0.8
+Term Deposit                       47,000      24%   TERM DEPOSIT      At Mat.        1.0
+Subordinated                       15,040       8%   SUBORDINATED      At Mat.        8.5
+Equity                             12,000       6%         EQUITY          N/A        N/A
+------------------------------------------------------------------------------------------
+TOTAL LIABILITIES                 200,000
