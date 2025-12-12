@@ -4,7 +4,7 @@ This repository shows selected practical applications in financial risk manageme
 
 The projects covered are:
 
-- **[Probability of Default (PD) and Loan Decision](#pd_modeling)** — ML-based PD modeling, loan scoring, and regulatory-compliant reporting  
+- [Probability of Default (PD) and Loan Decision](#pd_modeling) — ML-based PD modeling, loan scoring, and regulatory-compliant reporting  
 - **[Liquidity Risk](#liquidity-risk)** — Basel III ratios (LCR, NSFR), cash management, and stress testing  
 - **[ICAAP: Interest Rate Risk in the Banking Book (IRRBB)](#icaap-interest-rate-risk-in-the-banking-book-irrbb)** — NII and EVE sensitivity analysis, behavioural NMD modelling, stress testing  
 - **[Operational Risk: Fraud Detection](#operational-risk-fraud-detection)** — ML-based fraud detection and operational risk monitoring
