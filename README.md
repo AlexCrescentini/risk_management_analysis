@@ -9,6 +9,12 @@ The projects covered are:
 - **[ICAAP: Interest Rate Risk in the Banking Book (IRRBB)](#icaap-interest-rate-risk-in-the-banking-book-irrbb)** — NII and EVE sensitivity analysis, behavioural NMD modelling, stress testing  
 - **[Operational Risk: Fraud Detection](#operational-risk-fraud-detection)** — ML-based fraud detection and operational risk monitoring
 
+- **[Probability of Default (PD) and Loan Decision](#probability-of-default-pd-and-loan-decision)**
+- **[Liquidity Risk](#liquidity-risk)**
+- **[ICAAP: Interest Rate Risk in the Banking Book (IRRBB)](#icaap-interest-rate-risk-in-the-banking-book-irrbb)**
+- **[Operational Risk: Fraud Detection](#operational-risk-fraud-detection)**
+
+
 #### Repository Structure
 
 ```
