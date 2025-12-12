@@ -49,7 +49,7 @@ PD is a central element in credit risk management and forms a key basis for Base
 - [`loan_scoring_and_decision.ipynb`](pd_modeling/loan_scoring_and_decision.ipynb) — Deployed the best model (XGBoost, AUC=0.87) to score new loan applications and automate approve/decline decisions based on risk bands. Generated SHAP-based adverse action notices for declined applicants (ECOA/FCRA compliance).
 
 ---
-
+<a name="liquidity_risk"></a>
 ### Liquidity Risk - ([`liquidity_risk/`](liquidity_risk/))
 Analysis covering Basel III - pillar 1 regulatory ratios (LCR and NSFR), daily cash management, cash forecasting, and stress testing:
 
@@ -57,7 +57,7 @@ Analysis covering Basel III - pillar 1 regulatory ratios (LCR and NSFR), daily c
 - [`liquidity_management.ipynb`](liquidity_risk/liquidity_management.ipynb) — Daily cash monitoring, Monte Carlo forecasting (90-day), operational buffers, and liquidity stress testing. Effective liquidity management requires daily cash monitoring, multi-horizon forecasting, stress testing, and contingency funding planning.
 
 ---
-
+<a name="icaap_irrbb"></a>
 ### ICAAP: Interest Rate Risk in the Banking Book (IRRBB) - ([`icaap_irrbb/`](icaap_irrbb/))
 IRRBB is the risk to a bank's economic value or net interest income from changes in interest rates in the banking book. It arises from maturity mismatches between assets and liabilities — for example, holding long-term fixed-rate mortgages funded by short-term deposits. Under **Basel III Pillar 2**, banks must assess IRRBB through the ICAAP process, measuring sensitivity from two perspectives: **NII** (earnings impact over 1 year) and **EVE** (present value impact on equity). This framework implements the full IRRBB analysis pipeline:
 
@@ -68,6 +68,6 @@ IRRBB is the risk to a bank's economic value or net interest income from changes
 - [`04_irrbb_stress_test.ipynb`](icaap_irrbb/04_irrbb_stress_test.ipynb) — **Stress tested** behavioural assumptions by shocking core ratios, betas, and effective maturities. Compared contractual vs behavioural vs stressed results. Assessed outlier test under adverse conditions and discussed hedging/management actions.
 
 ---
-
+<a name="fraud_detection"></a>
 ### Operational Risk: Fraud Detection - ([`fraud_detection/`](fraud_detection/))
 Operational risk is the risk of loss resulting from inadequate or failed internal processes, people, systems, or external events. This section will focus on fraud detection as a tangible application using machine learning.
