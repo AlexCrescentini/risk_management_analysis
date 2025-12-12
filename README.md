@@ -6,7 +6,7 @@ The projects covered are:
 
 - **[Probability of Default (PD) and Loan Decision](#probability-of-default-pd-modeling-and-loan-decision)** — ML-based PD modeling, loan scoring, and regulatory-compliant reporting  
 - **[Liquidity Risk](#liquidity-risk)** — Basel III ratios (LCR, NSFR), cash management, and stress testing  
-- **[ICAAP: Interest Rate Risk in the Banking Book (IRRBB)](#icaap-interest-rate-risk-in-the-banking-book-irrbb)** — EVE and NII sensitivity analysis, Pillar 2 capital assessment  
+- **[ICAAP: Interest Rate Risk in the Banking Book (IRRBB)](#icaap-interest-rate-risk-in-the-banking-book-irrbb)** — NII and EVE sensitivity analysis, behavioural NMD modelling, stress testing  
 - **[Operational Risk: Fraud Detection](#operational-risk-fraud-detection)** — ML-based fraud detection and operational risk monitoring
 
 #### Repository Structure
@@ -25,8 +25,12 @@ risk_management_analysis/
 │   ├── basel_III_metrics.ipynb
 │   └── liquidity_management.ipynb
 ├── icaap_irrbb/
-│   ├── data/ 
-│   └── var_stress_testing.ipynb
+│   ├── output/
+│   ├── 00_basel_III_yield_curve_shocks.ipynb
+│   ├── 01_synthetic_balance_sheet.ipynb
+│   ├── 02_irrbb_fundamentals.ipynb
+│   ├── 03_irrbb_NMD_behav.ipynb
+│   └── 04_irrbb_stress_test.ipynb
 └── fraud_detection/
     ├── data/
     └── fraud_detection.ipynb
@@ -55,7 +59,13 @@ Analysis covering Basel III - pillar 1 regulatory ratios (LCR and NSFR), daily c
 ---
 
 ### ICAAP: Interest Rate Risk in the Banking Book (IRRBB) - ([`icaap_irrbb/`](icaap_irrbb/))
-IRRBB is the risk to a bank’s economic value or net interest income from changes in interest rates in the banking book. It is primarily assessed under Basel III Pillar 2 (ICAAP).
+IRRBB is the risk to a bank's economic value or net interest income from changes in interest rates in the banking book. It arises from maturity mismatches between assets and liabilities — for example, holding long-term fixed-rate mortgages funded by short-term deposits. Under **Basel III Pillar 2**, banks must assess IRRBB through the ICAAP process, measuring sensitivity from two perspectives: **NII** (earnings impact over 1 year) and **EVE** (present value impact on equity). This framework implements the full IRRBB analysis pipeline:
+
+- [`00_basel_III_yield_curve_shocks.ipynb`](icaap_irrbb/00_basel_III_yield_curve_shocks.ipynb) — Generated the six standard Basel yield curve shock scenarios (parallel ±200bp, steepener, flattener, short rate ±300bp) from U.S. Treasury data. These scenarios form the basis for regulatory stress testing.
+- [`01_synthetic_balance_sheet.ipynb`](icaap_irrbb/01_synthetic_balance_sheet.ipynb) — Created a synthetic bank balance sheet with realistic asset/liability structure: fixed and floating rate loans (mortgages, SME, corporate), non-maturity deposits (NMDs) by segment, term deposits, wholesale funding, and subordinated debt.
+- [`02_irrbb_fundamentals.ipynb`](icaap_irrbb/02_irrbb_fundamentals.ipynb) — Implemented **contractual** NII and EVE calculations. NII computed over 1Y horizon with repricing logic for floating-rate instruments. EVE computed as PV(Assets) − PV(Liabilities) under all six scenarios. Includes Basel outlier test (15% of Tier 1 threshold).
+- [`03_irrbb_NMD_behav.ipynb`](icaap_irrbb/03_irrbb_NMD_behav.ipynb) — Applied **behavioural modelling** to NMDs: core/non-core deposit split, deposit beta (pass-through rates), and effective maturity assignment. Demonstrated how behavioural assumptions significantly reduce measured sensitivity compared to contractual treatment.
+- [`04_irrbb_stress_test.ipynb`](icaap_irrbb/04_irrbb_stress_test.ipynb) — **Stress tested** behavioural assumptions by shocking core ratios, betas, and effective maturities. Compared contractual vs behavioural vs stressed results. Assessed outlier test under adverse conditions and discussed hedging/management actions.
 
 ---
 
