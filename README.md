@@ -42,7 +42,7 @@ risk_management_analysis/
 
 ---
 <a name="pd-modeling"></a>
-### Probability of Default (PD) Modeling and Loan Decision - ([`pd_modeling/`](pd_modeling/))
+### Probability of Default (PD) and Loan Decision - ([`pd_modeling/`](pd_modeling/))
 PD is a central element in credit risk management and forms a key basis for Basel III Pillar 1 capital requirements. Here we focus on using machine learning for probability of default (PD) modeling, model calibration, automated credit decisioning, and regulatory-compliant adverse action reporting.
    
 - [`credit_default_model.ipynb`](pd_modeling/credit_default_model.ipynb) — Explored and preprocessed the Kaggle "Give Me Some Credit" dataset (150K loan applications). Built and compared Logistic Regression, KNN, Random Forest, and XGBoost classifiers. Evaluated with AUC-ROC, confusion matrices, and calibration curves. Applied Platt scaling for probability calibration.
