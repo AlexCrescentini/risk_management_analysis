@@ -1,25 +1,25 @@
 BALANCE SHEET SUMMARY (mln EUR)
-===============================================================================================
+==================================================================================================================================
 
-ASSETS                             Amount    Share    Rate Type  Repricing (M) Maturity (Y)
------------------------------------------------------------------------------------------------
-Consumer Credit                    30,000      15%        Fixed        At Mat.          1.7
-Corporate Loan                     30,000      15%     Floating              2          2.0
-Sme Loan                           40,000      20%     Floating              7          3.0
-Retail Mortgage Fixed              70,000      35%        Fixed        At Mat.         13.9
-Retail Mortgage Floating           30,000      15%     Floating              4         14.2
------------------------------------------------------------------------------------------------
-TOTAL ASSETS                      200,000
+ASSETS                                 Amount      Share   Weigh. Avg. Rate      Rate Type    Repricing (M)   Maturity (Y)
+----------------------------------------------------------------------------------------------------------------------------------
+Consumer Credit                        30,000        15%              7.51%          Fixed          At Mat.            1.7
+Corporate Loan                         30,000        15%              4.76%       Floating                2            2.0
+Sme Loan                               40,000        20%              5.43%       Floating                7            3.0
+Retail Mortgage Fixed                  70,000        35%              4.56%          Fixed          At Mat.           13.9
+Retail Mortgage Floating               30,000        15%              4.23%       Floating                4           14.2
+----------------------------------------------------------------------------------------------------------------------------------
+TOTAL ASSETS                          200,000
 
-LIABILITIES                        Amount    Share    Rate Type  Repricing (M) Maturity (Y)
------------------------------------------------------------------------------------------------
-Corporate Treasury (NMD)            9,400       5%     Floating            O/N          O/N
-Retail Current (NMD)               28,200      14%     Floating            O/N          O/N
-Retail Savings (NMD)               33,840      17%     Floating            O/N          O/N
-Sme Operational (NMD)              13,160       7%     Floating            O/N          O/N
-Wholesale                          41,360      21%        Fixed        At Mat.          0.8
-Term Deposit                       47,000      24%        Fixed        At Mat.          1.0
-Subordinated                       15,040       8%        Fixed        At Mat.          8.5
-Equity                             12,000       6%          N/A             //           //
------------------------------------------------------------------------------------------------
-TOTAL LIABILITIES                 200,000
+LIABILITIES                            Amount      Share   Weigh. Avg. Rate      Rate Type    Repricing (M)   Maturity (Y)
+----------------------------------------------------------------------------------------------------------------------------------
+Corporate Treasury (NMD)                9,400         5%              2.26%        Managed              O/N            O/N
+Retail Current (NMD)                   28,200        14%              0.25%        Managed              O/N            O/N
+Retail Savings (NMD)                   33,840        17%              1.75%        Managed              O/N            O/N
+Sme Operational (NMD)                  13,160         7%              0.51%        Managed              O/N            O/N
+Wholesale                              41,360        21%              3.92%          Fixed          At Mat.            0.8
+Term Deposit                           47,000        24%              2.92%          Fixed          At Mat.            1.0
+Subordinated                           15,040         8%              5.38%          Fixed          At Mat.            8.5
+Equity                                 12,000         6%                 //            N/A               //             //
+----------------------------------------------------------------------------------------------------------------------------------
+TOTAL LIABILITIES                     200,000
