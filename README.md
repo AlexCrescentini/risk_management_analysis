@@ -4,17 +4,10 @@ This repository shows selected practical applications in financial risk manageme
 
 The projects covered are:
 
-- **[Probability of Default (PD) and Loan Decision](#probability-of-default-pd-modeling-and-loan-decision)** — ML-based PD modeling, loan scoring, and regulatory-compliant reporting  
+- **[Probability of Default (PD) and Loan Decision](#pd_modeling)** — ML-based PD modeling, loan scoring, and regulatory-compliant reporting  
 - **[Liquidity Risk](#liquidity-risk)** — Basel III ratios (LCR, NSFR), cash management, and stress testing  
 - **[ICAAP: Interest Rate Risk in the Banking Book (IRRBB)](#icaap-interest-rate-risk-in-the-banking-book-irrbb)** — NII and EVE sensitivity analysis, behavioural NMD modelling, stress testing  
 - **[Operational Risk: Fraud Detection](#operational-risk-fraud-detection)** — ML-based fraud detection and operational risk monitoring
-
-- **[Probability of Default (PD) Modeling and Loan Decision](#probability-of-default-pd-modeling-and-loan-decision)**
-- **[Liquidity Risk](#liquidity-risk)**
-- **[ICAAP: Interest Rate Risk in the Banking Book (IRRBB)](#icaap-interest-rate-risk-in-the-banking-book-irrbb)**
-- **[Operational Risk: Fraud Detection](#operational-risk-fraud-detection)**
-
-
 
 #### Repository Structure
 
@@ -48,7 +41,7 @@ risk_management_analysis/
 `pandas`, `numpy`, `requests`, `duckdb`, `matplotlib`, `scipy`, `geopandas`, `plotly`
 
 ---
-
+<a name="pd-modeling"></a>
 ### Probability of Default (PD) Modeling and Loan Decision - ([`pd_modeling/`](pd_modeling/))
 PD is a central element in credit risk management and forms a key basis for Basel III Pillar 1 capital requirements. Here we focus on using machine learning for probability of default (PD) modeling, model calibration, automated credit decisioning, and regulatory-compliant adverse action reporting.
    
